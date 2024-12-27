@@ -1,4 +1,5 @@
 import 'package:bootcamp3/hometasks/task1/fitness_screen.dart';
+import 'package:bootcamp3/hometasks/task2/r_screen.dart';
 import 'package:bootcamp3/screen/appbar.dart';
 import 'package:bootcamp3/screen/gesture_detector.dart';
 import 'package:bootcamp3/screen/home_screen.dart';
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: FitnessScreen(),
+      home: RScreen(),
     );
   }
 }

@@ -8,7 +8,7 @@ class GetStartedButton extends StatelessWidget {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
         backgroundColor: Colors.blueAccent.shade100,
-        minimumSize: Size(350, 60),
+        minimumSize: Size(350,   60),
         elevation: 5,
       ),
       onPressed: () {},
