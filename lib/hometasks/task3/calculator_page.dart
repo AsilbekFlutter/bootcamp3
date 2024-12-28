@@ -8,22 +8,21 @@ class CalculatorApp extends StatefulWidget {
 }
 
 class _CalculatorAppState extends State<CalculatorApp> {
-  String input = ""; // Foydalanuvchi kiritgan amal
-  String result = "0"; // Hisoblash natijasi
-
+  String input = "";
+  String result = "0";
   void onButtonPressed(String value) {
     setState(() {
       if (value == "C") {
-        input = ""; // Tozalash
+        input = "";
         result = "0";
       } else if (value == "=") {
         try {
-          result = evaluateExpression(input); // Hisoblash
+          result = evaluateExpression(input);
         } catch (e) {
-          result = "Xato"; // Xato holati
+          result = "Xato";
         }
       } else {
-        input += value; // Amalni davom ettirish
+        input += value;
       }
     });
   }
@@ -79,7 +78,7 @@ class _CalculatorAppState extends State<CalculatorApp> {
                           input,
                           style: const TextStyle(
                             color: Colors.white,
-                            fontSize: 70, // Yuqoridagi matn katta
+                            fontSize: 70,
                           ),
                         ),
                       ],
@@ -94,7 +93,7 @@ class _CalculatorAppState extends State<CalculatorApp> {
                           result,
                           style: const TextStyle(
                             color: Colors.white,
-                            fontSize: 28, // Pastdagi natija kichik
+                            fontSize: 28,
                           ),
                         ),
                       ],
