@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ThirdTask extends StatefulWidget {
-  const ThirdTask({super.key});
+class CalculatorApp extends StatefulWidget {
+  const CalculatorApp({super.key});
 
   @override
-  State<ThirdTask> createState() => _ThirdTaskState();
+  State<CalculatorApp> createState() => _CalculatorAppState();
 }
 
-class _ThirdTaskState extends State<ThirdTask> {
+class _CalculatorAppState extends State<CalculatorApp> {
   String input = ""; // Foydalanuvchi kiritgan amal
   String result = "0"; // Hisoblash natijasi
 
